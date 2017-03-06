@@ -1,0 +1,111 @@
+html{ font-size:50px; }
+body{ font-size:.28rem; }
+header {
+    height: 1rem;
+    line-height: 1rem;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #21d9a2), color-stop(1, #31bd80));
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+.backIcon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0 .3rem;
+    color: white;
+    font-size: .4rem;
+}
+.iconfont {
+    font-family: 'freshregular';
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    height: 1rem;
+    line-height: 1rem;
+    color: white;
+}
+
+/*goodsList*/
+.goodsPic{width:2rem;height:2rem;display:block;float:left;text-align:center;overflow:hidden;border:1px #f8f8f8 solid;border-radius:2px;}
+.goodsPic img{width:auto;max-width:100%;height:2rem;}
+.goodsInfor{margin-left:2.3rem;position:relative;}
+.goodsInfor h2 a{display:block;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;color:#333;}
+.goodsInfor p{margin:.2rem 0;}
+.goodsInfor p .price{color:#31bd80;}
+.goodsInfor p .price:before{content:"￥";}
+.goodsInfor p del{color:grey;}
+.goodsInfor p del:before{content:"原价：￥"}
+.goodsInfor .addToCart{position:absolute;top:30%;right:3%;font-family:'freshregular';font-size:.65rem;color:#f0c600;}
+
+.cart dt a {
+    color: #06c1ae;
+    text-decoration: none;
+    outline: 0;
+    outline-color: initial;
+    outline-style: initial;
+    outline-width: 0px;
+}
+
+
+/*cart*/
+.cart{background:white;overflow:hidden;margin:0;}
+.cart dt{height:.75rem;line-height:.75rem;border-bottom:1px #d2d2d2 solid;padding:0 3%;}
+.cart dt label input[type="checkbox"]{margin-right:.1rem; vertical-align:middle;}
+.cart dt .edit{float:right;display:block;}
+.cart dd{overflow:hidden;border-bottom:1px #d2d2d2 dotted;padding:.2rem 3%;position:relative;margin:0;}
+.cart dd input[type="checkbox"]{float:left;margin-right:.15rem;}
+.cart dd .goodsPic{width:1.2rem;height:1.2rem;float:left;}
+.cart dd .goodsPic img{height:1.2rem;}
+.cart dd .goodsInfor{margin-left:1.9rem;}
+.cart dd .goodsInfor h2{margin:.15rem 0;overflow:hidden;}
+.cart dd .goodsInfor h2 a{display:block;color:grey;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;float:left;}
+.cart dd .goodsInfor h2 span{float:right;color:#999;}
+.cart dd .goodsInfor h2 span:before{content:"x";}
+.cart dd .goodsInfor .numberWidget{display:none;}
+.cart dd .goodsInfor .numberWidget input[type="button"]{width:.5rem;height:.5rem;border-radius:50%;background:none;border:1px #d2d2d2 solid;color:grey;outline:none;}
+.cart dd .goodsInfor .priceArea{margin:.15rem 0;}
+.cart dd .goodsInfor .priceArea strong{color:#6aab60;font-size:.35rem;margin-right:.15rem;}
+.cart dd .goodsInfor .priceArea strong:before{content:"￥";font-size:.3rem;}
+.cart dd .goodsInfor .priceArea del{color:grey;}
+.cart dd .goodsInfor .priceArea del:before{content:"￥";}
+.cart dd .goodsInfor .numberWidget input[type="text"]{width:1rem;text-align:center;background:none;border:none;}
+.cart dd .delBtn{display:none;position:absolute;right:0;top:0;width:1rem;padding:.43rem 0;background:#31bd80;color:white;text-align:center;}
+.cart dd .delBtn:before{display:block;content:"x";font-family:'freshregular';font-size:.5rem;}
+
+/*bottom nav*/
+.btmNav{height:1rem;line-height:1rem;background:#f8f8f8;border-top:1px #f2f2f2 solid;position:fixed;bottom:0;width:100%;display:box;display:-webkit-box;display:-moz-box;}
+.btmNav a{display:block;box-flex:1px;-webkit-box-flex:1;-moz-box-flex:1;text-align:center;border-right:1px #f2f2f2 solid;text-shadow:0 1px 1px white;color:#999;}
+.btmNav a:last-child{border:none;}
+
+.h1,.h2{font-weight:500;line-height:1.1}
+.h1,.h2,h1,h2{margin-top:.28rem;margin-bottom:.14rem}
+.h1 .small,.h1 small,.h2 .small,.h2 small,.h3 .small,.h3 small,h1 .small,h1 small,h2 .small,h2 small,h3 .small,h3 small{font-size:65%}
+.h4,.h5,.h6,h4,h5,h6{margin-top:.14rem;margin-bottom:.14rem}
+.h4 .small,.h4 small,.h5 .small,.h5 small,.h6 .small,.h6 small,h4 .small,h4 small,h5 .small,h5 small,h6 .small,h6 small{font-size:75%}
+.h1,h1{font-size:.364rem}
+.h2,h2{font-size:.2996rem}
+input{
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+input {
+    color: inherit;
+    font: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    font-stretch: inherit;
+    line-height: inherit;
+    margin: 0;
+}

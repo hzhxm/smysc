@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5c762522-94a4-4af7-ac21-2ed860546ce3" name="默认的" comment="" />
+    <ignored path="smysc.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="smysc" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="homepage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/action/homepage.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.5180724">
+              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+              <folding>
+                <marker date="1488810484301" expanded="true" signature="408:449" placeholder="SELECT image... hp_focusMap" />
+                <marker date="1488810484301" expanded="true" signature="794:837" placeholder="SELECT image... hp_shop_class" />
+                <marker date="1488810484301" expanded="true" signature="1137:1201" placeholder="SELECT image... hp_product_class" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prodDetail.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/prodDetail.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="12.892858">
+              <caret line="279" column="21" selection-start-line="279" selection-start-column="21" selection-end-line="279" selection-end-column="21" />
+              <folding>
+                <marker date="1488811952897" expanded="true" signature="12:15" placeholder="{...}" />
+                <marker date="1488811952897" expanded="true" signature="4329:4391" placeholder="..." />
+                <marker date="1488811952897" expanded="true" signature="4433:4477" placeholder="..." />
+                <marker date="1488811952897" expanded="true" signature="5245:5307" placeholder="..." />
+                <marker date="1488811952897" expanded="true" signature="5345:5389" placeholder="..." />
+                <marker date="1488811952897" expanded="true" signature="6473:6507" placeholder="..." />
+                <marker date="1488811952897" expanded="true" signature="6713:6755" placeholder="..." />
+                <marker date="1488811952897" expanded="true" signature="6803:6846" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="productDetail.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/action/productDetail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5871314">
+              <caret line="113" column="2" selection-start-line="113" selection-start-column="2" selection-end-line="113" selection-end-column="2" />
+              <folding>
+                <marker date="1488812244949" expanded="true" signature="634:793" placeholder="insert into `shopcart_list`... " />
+                <marker date="1488812244949" expanded="true" signature="1283:1844" placeholder="select sum(`... product_images" />
+                <marker date="1488812244949" expanded="true" signature="3091:3167" placeholder="SELECT image... product_detail" />
+                <marker date="1488812244949" expanded="true" signature="3695:3781" placeholder="SELECT image... prodetaildescription" />
+                <marker date="1488812244949" expanded="true" signature="4165:4243" placeholder="SELECT image... proparameter" />
+                <marker date="1488812244949" expanded="true" signature="4621:4688" placeholder="SELECT descr... procomment" />
+                <marker date="1488812244949" expanded="true" signature="5462:5568" placeholder="select `prod... product_type" />
+                <marker date="1488812244949" expanded="true" signature="6257:6361" placeholder="select `prod... product_type" />
+                <marker date="1488812244949" expanded="true" signature="6739:7364" placeholder="select sum(`... product_images" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shopcart.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/shopcart.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="29" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dbclass.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dbclass.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.607143">
+              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="62" selection-end-column="5" />
+              <folding>
+                <marker date="1488810675054" expanded="true" signature="1603:1644" placeholder="SELECT image... hp_focusMap" />
+                <marker date="1488810675054" expanded="true" signature="2136:2190" placeholder="INSERT INTO ${$tb_name}... " />
+                <marker date="1488810675054" expanded="true" signature="3405:3536" placeholder="CREATE TABLE... IF" />
+                <marker date="1488810675054" expanded="true" signature="3602:3627" placeholder="create table... ${$tb}" />
+                <marker date="1488810675054" expanded="true" signature="3690:3716" placeholder="create table... ${$tb}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shopcart.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/action/shopcart.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.6964285">
+              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+              <folding>
+                <marker date="1488811355141" expanded="true" signature="231:775" placeholder="SELECT `SC`.... shopcart_list" />
+                <marker date="1488811355141" expanded="true" signature="2120:2131" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="productDetail.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/productDetail.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.428571">
+              <caret line="63" column="8" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="productDetails.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/productDetails.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.2142856">
+              <caret line="119" column="23" selection-start-line="119" selection-start-column="13" selection-end-line="119" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shopcart.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shopcart.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.607143">
+              <caret line="158" column="47" selection-start-line="158" selection-start-column="39" selection-end-line="158" selection-end-column="47" />
+              <folding>
+                <element signature="n#style#0;n#a#1;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1487684398000" expanded="true" signature="2331:2390" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product_list.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/action/product_list.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.5301204">
+              <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+              <folding>
+                <marker date="1488810519416" expanded="true" signature="643:681" placeholder="SELECT * FRO... product_infomation" />
+                <marker date="1488810519416" expanded="true" signature="643:682" placeholder="SELECT * FRO... product_infomation" />
+                <marker date="1488810519416" expanded="true" signature="643:685" placeholder="SELECT * FRO... product_infomation" />
+                <marker date="1488810519416" expanded="true" signature="643:711" placeholder="SELECT * FRO... product_infomation" />
+                <marker date="1488810519416" expanded="true" signature="643:720" placeholder="SELECT * FRO... product_infomation" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/deal.php" />
+        <option value="$PROJECT_DIR$/js/hp.js" />
+        <option value="$PROJECT_DIR$/01.php" />
+        <option value="$PROJECT_DIR$/system/init.php" />
+        <option value="$PROJECT_DIR$/1.php" />
+        <option value="$PROJECT_DIR$/index1.html" />
+        <option value="$PROJECT_DIR$/class/proinfo.php" />
+        <option value="$PROJECT_DIR$/productDetails.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/homepage.js" />
+        <option value="$PROJECT_DIR$/category.html" />
+        <option value="$PROJECT_DIR$/js/category.js" />
+        <option value="$PROJECT_DIR$/category_list.html" />
+        <option value="$PROJECT_DIR$/js/prodSort.js" />
+        <option value="$PROJECT_DIR$/action/category.php" />
+        <option value="$PROJECT_DIR$/action/dbAction.php" />
+        <option value="$PROJECT_DIR$/action/homepage.php" />
+        <option value="$PROJECT_DIR$/action/product_list.php" />
+        <option value="$PROJECT_DIR$/dbclass.php" />
+        <option value="$PROJECT_DIR$/action/shopcart.php" />
+        <option value="$PROJECT_DIR$/js/prodDetail.js" />
+        <option value="$PROJECT_DIR$/action/productDetail.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="添加" />
+    <OptionsSetting value="true" id="移除" />
+    <OptionsSetting value="true" id="签出" />
+    <OptionsSetting value="true" id="更新" />
+    <OptionsSetting value="true" id="状态" />
+    <OptionsSetting value="true" id="编辑" />
+    <ConfirmationsSetting value="0" id="添加" />
+    <ConfirmationsSetting value="0" id="移除" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smysc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smysc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smysc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smysc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smysc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smysc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smysc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smysc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smysc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smysc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smysc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="class" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smysc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smysc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="action" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="D:\Program Files\nodejs\node.exe" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WWW\tmp\smysc\action" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5c762522-94a4-4af7-ac21-2ed860546ce3" name="默认的" comment="" />
+      <created>1478309470904</created>
+      <option name="number" value="Default" />
+      <updated>1478309470904</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13844515" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5075594" sideWeight="0.43503729" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5075594" sideWeight="0.56496274" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="6" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/action/homepage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="883" column="50" selection-start-line="883" selection-start-column="36" selection-end-line="883" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/homepage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action/homepage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="17" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/homepage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="21" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action/homepage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="17" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/homepage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="21" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action/homepage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="91" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="53" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="91" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="53" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="70" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="53" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="70" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="50" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="105" column="9" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/member.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43206108">
+          <caret line="246" column="28" selection-start-line="246" selection-start-column="28" selection-end-line="246" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/TouchSlide.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06506849">
+          <caret line="13" column="2892" selection-start-line="13" selection-start-column="2892" selection-end-line="13" selection-end-column="2892" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="50" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/proinfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/mysql.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34775642">
+          <caret line="287" column="9" selection-start-line="287" selection-start-column="9" selection-end-line="287" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/MMysql.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="125" column="20" selection-start-line="125" selection-start-column="20" selection-end-line="125" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3512974">
+          <caret line="6445" column="29" selection-start-line="6445" selection-start-column="29" selection-end-line="6445" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26124817">
+          <caret line="147" column="1" selection-start-line="147" selection-start-column="1" selection-end-line="147" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6785714">
+          <caret line="209" column="45" selection-start-line="209" selection-start-column="45" selection-end-line="209" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33286715">
+          <caret line="850" column="0" selection-start-line="850" selection-start-column="0" selection-end-line="850" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33286715">
+          <caret line="3" column="21950" selection-start-line="3" selection-start-column="21950" selection-end-line="3" selection-end-column="21950" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/global.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/category.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="91" column="2" selection-start-line="91" selection-start-column="2" selection-end-line="91" selection-end-column="43" />
+          <folding>
+            <marker date="1488607775034" expanded="true" signature="1352:1379" placeholder="..." />
+            <marker date="1488607775034" expanded="true" signature="1461:1562" placeholder="..." />
+            <marker date="1488607775034" expanded="true" signature="2092:2105" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7612137">
+          <caret line="213" column="10" selection-start-line="213" selection-start-column="10" selection-end-line="213" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/prodSort.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.875">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+          <folding>
+            <marker date="1488807745611" expanded="true" signature="4444:4475" placeholder="..." />
+            <marker date="1488807745611" expanded="true" signature="4524:4553" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/category_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.7976191">
+          <caret line="170" column="14" selection-start-line="170" selection-start-column="14" selection-end-line="170" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/homepage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="148" column="29" selection-start-line="148" selection-start-column="29" selection-end-line="148" selection-end-column="29" />
+          <folding>
+            <marker date="1488469035770" expanded="true" signature="3098:3153" placeholder="..." />
+            <marker date="1488469035770" expanded="true" signature="3889:3900" placeholder="..." />
+            <marker date="1488469035770" expanded="true" signature="4043:4054" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/init.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11154599">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6987952">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <marker date="1488810403125" expanded="true" signature="242:325" placeholder="SELECT categ... categoryInfo" />
+            <marker date="1488810403125" expanded="true" signature="620:695" placeholder="SELECT categ... categoryInfo" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action/dbAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.361446">
+          <caret line="46" column="37" selection-start-line="46" selection-start-column="37" selection-end-line="46" selection-end-column="37" />
+          <folding>
+            <marker date="1488810421962" expanded="true" signature="408:449" placeholder="SELECT image... hp_focusMap" />
+            <marker date="1488810421962" expanded="true" signature="794:837" placeholder="SELECT image... hp_shop_class" />
+            <marker date="1488810421962" expanded="true" signature="1137:1201" placeholder="SELECT image... hp_product_class" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action/product_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5301204">
+          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+          <folding>
+            <marker date="1488810519416" expanded="true" signature="643:681" placeholder="SELECT * FRO... product_infomation" />
+            <marker date="1488810519416" expanded="true" signature="643:682" placeholder="SELECT * FRO... product_infomation" />
+            <marker date="1488810519416" expanded="true" signature="643:685" placeholder="SELECT * FRO... product_infomation" />
+            <marker date="1488810519416" expanded="true" signature="643:711" placeholder="SELECT * FRO... product_infomation" />
+            <marker date="1488810519416" expanded="true" signature="643:720" placeholder="SELECT * FRO... product_infomation" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action/homepage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.5180724">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding>
+            <marker date="1488810484301" expanded="true" signature="408:449" placeholder="SELECT image... hp_focusMap" />
+            <marker date="1488810484301" expanded="true" signature="794:837" placeholder="SELECT image... hp_shop_class" />
+            <marker date="1488810484301" expanded="true" signature="1137:1201" placeholder="SELECT image... hp_product_class" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbclass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.607143">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="62" selection-end-column="5" />
+          <folding>
+            <marker date="1488810675054" expanded="true" signature="1603:1644" placeholder="SELECT image... hp_focusMap" />
+            <marker date="1488810675054" expanded="true" signature="2136:2190" placeholder="INSERT INTO ${$tb_name}... " />
+            <marker date="1488810675054" expanded="true" signature="3405:3536" placeholder="CREATE TABLE... IF" />
+            <marker date="1488810675054" expanded="true" signature="3602:3627" placeholder="create table... ${$tb}" />
+            <marker date="1488810675054" expanded="true" signature="3690:3716" placeholder="create table... ${$tb}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopcart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.607143">
+          <caret line="158" column="47" selection-start-line="158" selection-start-column="39" selection-end-line="158" selection-end-column="47" />
+          <folding>
+            <element signature="n#style#0;n#a#1;n#aside#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1487684398000" expanded="true" signature="2331:2390" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/shopcart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action/shopcart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6964285">
+          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding>
+            <marker date="1488811355141" expanded="true" signature="231:775" placeholder="SELECT `SC`.... shopcart_list" />
+            <marker date="1488811355141" expanded="true" signature="2120:2131" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/productDetail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.428571">
+          <caret line="63" column="8" selection-start-line="63" selection-start-column="1" selection-end-line="63" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/productDetails.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.2142856">
+          <caret line="119" column="23" selection-start-line="119" selection-start-column="13" selection-end-line="119" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/prodDetail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="12.892858">
+          <caret line="279" column="21" selection-start-line="279" selection-start-column="21" selection-end-line="279" selection-end-column="21" />
+          <folding>
+            <marker date="1488811952897" expanded="true" signature="12:15" placeholder="{...}" />
+            <marker date="1488811952897" expanded="true" signature="4329:4391" placeholder="..." />
+            <marker date="1488811952897" expanded="true" signature="4433:4477" placeholder="..." />
+            <marker date="1488811952897" expanded="true" signature="5245:5307" placeholder="..." />
+            <marker date="1488811952897" expanded="true" signature="5345:5389" placeholder="..." />
+            <marker date="1488811952897" expanded="true" signature="6473:6507" placeholder="..." />
+            <marker date="1488811952897" expanded="true" signature="6713:6755" placeholder="..." />
+            <marker date="1488811952897" expanded="true" signature="6803:6846" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action/productDetail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5871314">
+          <caret line="113" column="2" selection-start-line="113" selection-start-column="2" selection-end-line="113" selection-end-column="2" />
+          <folding>
+            <marker date="1488812244949" expanded="true" signature="634:793" placeholder="insert into `shopcart_list`... " />
+            <marker date="1488812244949" expanded="true" signature="1283:1844" placeholder="select sum(`... product_images" />
+            <marker date="1488812244949" expanded="true" signature="3091:3167" placeholder="SELECT image... product_detail" />
+            <marker date="1488812244949" expanded="true" signature="3695:3781" placeholder="SELECT image... prodetaildescription" />
+            <marker date="1488812244949" expanded="true" signature="4165:4243" placeholder="SELECT image... proparameter" />
+            <marker date="1488812244949" expanded="true" signature="4621:4688" placeholder="SELECT descr... procomment" />
+            <marker date="1488812244949" expanded="true" signature="5462:5568" placeholder="select `prod... product_type" />
+            <marker date="1488812244949" expanded="true" signature="6257:6361" placeholder="select `prod... product_type" />
+            <marker date="1488812244949" expanded="true" signature="6739:7364" placeholder="select sum(`... product_images" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
