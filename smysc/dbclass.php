@@ -29,6 +29,13 @@ class dbclass{
         return mysqli_error($connect);
     }
 
+function mysql_insert($connect,$sql){
+    if(!mysqli_query($connect,$sql)){
+        die("insert info error  : ".mysqli_error($connect));
+    }else{
+        return true;
+    }
+}
     //初始化并选择了db
     function sql_init($server=SERVER,$user=DBUSER,$password=DBPWD,$db=db_name){
 

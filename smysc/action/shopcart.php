@@ -32,7 +32,7 @@ $userId =1;
         while ($row = $db->my_fetch_array($result,MYSQLI_BOTH)) {
 
             $cartlist .= '<dd>';
-            $cartlist .= '<input type="checkbox"/>';
+            $cartlist .= '<input type="checkbox" name="chkItem" value="'. $row['product_price'] . '"/>';
             $cartlist .= '<a href="productDetails.html" class="goodsPic"><img src="' . $row['product_image'] . '"/></a>';
             $cartlist .= '<div class="goodsInfor">';
             $cartlist .= '<h2><a href="productDetails.html">' . $row['product_title'] . '</a><span>' . $row['product_num'] . '</span></h2>';

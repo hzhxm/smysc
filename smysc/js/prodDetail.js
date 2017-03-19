@@ -6,6 +6,7 @@ $(function(){
 		$("#goodsContent").hide();
 		$("#home_menu").hide();
 		$("#tocart_submit").show();
+		$("#bynow_submit").hide();
 		$("#overlayout").addClass("overlayout");
 	});
 
@@ -15,11 +16,31 @@ $(function(){
 		$("#goodsContent").show();
 		$("#home_menu").show();
 		$("#tocart_submit").hide();
+		$("#bynow_submit").hide();
 		$("#overlayout").removeClass("overlayout");
 	});
 	//查看大图
-	$("img.small_img").click(function(){
+	$("body").on("click","#productImg",function(){//可行
+	//$("img.small_img").click(function(){
+	//$("img.small_img").unbind("click").bind("click",function(){//可行
+		$("#tocart_overlayout").addClass("tocart_overlayout");
+		$(".tocart").hide();
+		$(".container").hide();
+		$(".fixed-foot").hide();
+		$(".header").hide();
+		$(".big_img").show();
+	});
 
+	//查看大图
+	$("body").on("click",".big_img",function(){//可行
+		//$("img.small_img").click(function(){
+		//$("img.small_img").unbind("click").bind("click",function(){//可行
+		$("#tocart_overlayout").removeClass("tocart_overlayout");
+		$(".tocart").show();
+		$(".container").show();
+		$(".fixed-foot").show();
+		$(".header").show();
+		$(".big_img").hide();
 	});
 
 	$("#tocart_submit a").click(function(){
@@ -46,14 +67,73 @@ $(function(){
 //       contentType: false,    //不可缺
 //      processData: false,    //不可缺
 			data: {action: "addTocart", color: selected_color,size: selected_size,num: selected_num},
-			//dataType: "json",
+			dataType: "json",
 			success: function (data, status) {
 				//ajax 成功
 				$(".tocart").fadeOut();
 				$("#goodsContent").show();
 				$("#home_menu").show();
 				$("#tocart_submit").hide();
+				$("#bynow_submit").hide();
 				$("#overlayout").removeClass("overlayout");
+				$("#totalNum").text(data.totalNum);
+			},
+			error: function (data, status, e) {
+				console.log("系统异常" + data + e);
+			},
+			beforeSend: function (xhr) {
+			}
+		});
+	});
+	$("#bynow").click(function(){
+		//$("body").on("click","#bynow",function(){
+
+		$(".tocart").fadeIn();
+		$("#goodsContent").hide();
+		$("#home_menu").hide();
+		$("#tocart_submit").hide();
+		$("#bynow_submit").show();
+		$("#overlayout").addClass("overlayout");
+	});
+
+	$("#bynow_submit a").click(function(){
+		var selected_size = $("#tocart_sizes").find(".check").text();
+		if(selected_size == "" || selected_size == null)
+		{
+			alert("请选择尺寸! ");
+			return;
+		}
+
+		var selected_color = $("#tocart_colors").find(".check").text();
+		if(selected_color == "" || selected_color == null)
+		{
+			alert("请选择颜色! ");
+			return;
+		}
+
+		var selected_num = $(".count").val();
+
+		//location.href="buy.html?productId=1&selected_color=" + selected_color + "&selected_size=" + selected_size +
+		//		"&selected_num=" + selected_num;
+
+		var productId = 1;
+		var userId = 1;
+
+		$.ajax({
+			type: 'post',
+			async: true,
+			url: 'action/productDetail.php',
+//       contentType: false,    //不可缺
+//      processData: false,    //不可缺
+			data: {action: "addToPay", color: selected_color,size: selected_size,num:selected_num,productId:productId,userId:userId},
+			//dataType: "json",
+			success: function (data, status) {
+				//ajax 成功
+				alert(data);
+				if(data == "succeed")
+				{
+					location.href="buy.html";
+				}
 			},
 			error: function (data, status, e) {
 				console.log("系统异常" + data + e);
@@ -289,9 +369,10 @@ function ajaxgGtProductDetailFocus(productID){
 			//配置焦点图代码
 			set_focus_imgae(data);
 			set_tocart_details(data);
+			$("#totalNum").text(data.totalNum);
 
 			//配置商品详情 参数 评论
-			setPro_detail_para_commment(data);
+			//setPro_detail_para_commment(data);
 		},
 		error: function (data, status, e) {
 			console.log("系统异常" + data + e);

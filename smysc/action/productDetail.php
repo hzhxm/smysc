@@ -7,7 +7,8 @@ $action = $_POST['action'];
 
 if($action == "initProductDetail")
 {
-    initProductDetail();
+    $userId=1;
+    initProductDetail($userId);
 }
 else if($action == "getStockAndImage")
 {
@@ -24,31 +25,80 @@ else if($action == "addTocart")
 
     addTocart($color,$size,$num);
 }
+else if($action =="addToPay")
+{
+    $color = $_POST['color'];
+    $size = $_POST['size'];
+    $num = $_POST['num'];
+    $productId = $_POST['productId'];
+    $userId = $_POST['userId'];
 
+    addToPay($color,$size,$num,$productId,$userId);
+}
+function addToPay($color,$size,$num,$productId,$userId){
+    $errstr = "no error";
+    date_default_timezone_set("PRC");
+    $curdate = date("Y-m-d H:i:s");
+    $totalNum = 0;
+    //连接数据库
+    $db = new dbclass("jim");
+    $connect = $db->sql_init();
+    $sql = "insert into `orderlist` (`OrderState`,`proID`,`proColor`,`proSize`,`userID`,`proNumber`,`Addtime`)
+      VALUES ('nowToPay',$productId,'$color','$size',$userId,'$num','$curdate')";
+
+    $result = $db->mysql_insert($connect,$sql);
+
+    if ($result) {
+        echo "succeed" ;
+    } else {
+        $errstr = "error to insert : " . mysqli_error($connect);
+    }
+
+    //关闭数据库
+    $db->close_connect($connect);
+}
 function addTocart($color,$size,$num){
     $userId = 2;
     $productID = 1;
     $errstr = "no error";
-
+    $totalNum = 0;
     //连接数据库
-        $db = new dbclass("jim");
-        $connect = $db->sql_init();
-        $sql = "insert into `shopcart_list` (`user_id`,`product_id`,`product_color`,`product_size`,`product_num`)
-          VALUES ($userId,$productID,'$color','$size','$num')";
-echo $sql;
-        $result = $db->mysql_insert($connect,$sql);
+    $db = new dbclass("jim");
+    $connect = $db->sql_init();
+    $sql = "insert into `shopcart_list` (`user_id`,`product_id`,`product_color`,`product_size`,`product_num`)
+      VALUES ($userId,$productID,'$color','$size','$num')";
 
-        if ($result) {
-            echo "succeed" ;
-        } else {
-            $errstr = "error to insert : " . mysqli_error($connect);
+    $result = $db->mysql_insert($connect,$sql);
+
+    if ($result) {
+        //echo "succeed" ;
+    } else {
+        $errstr = "error to insert : " . mysqli_error($connect);
+    }
+
+    $sql = "select sum(`product_num`)  from `shopcart_list` WHERE `user_id`=".$userId;
+
+    $result = $db->my_query($connect,$sql);
+
+    if ($result) {
+        while ($row = $db->my_fetch_array($result, MYSQLI_BOTH)) {
+            $totalNum = $row[0];
         }
+    } else {
+        $errstr = "error to query : " . mysqli_error($connect);
+    }
 
 
     //echo $productlist ;
     //关闭数据库
-        $db->close_connect($connect);
+    $db->close_connect($connect);
 
+    //配置ajax返回数据
+    $data = array(
+        "totalNum" => $totalNum,
+        "error" => $errstr
+    );
+    echo json_encode($data);
 }
 
 function getStockAndImage($color,$size){
@@ -93,7 +143,7 @@ function getStockAndImage($color,$size){
 }
 
 
-function initProductDetail()
+function initProductDetail($userId)
 {
 $color = "0";
 $image1="1";
@@ -248,6 +298,18 @@ if($color){
         $errstr = "error to query : " . mysqli_error($connect);
     }
 
+    $totalNum=0;
+    $sql = "select sum(`product_num`)  from `shopcart_list` WHERE `user_id`=".$userId ;
+
+    $result = $db->my_query($connect,$sql);
+
+    if ($result) {
+        while ($row = $db->my_fetch_array($result, MYSQLI_BOTH)) {
+            $totalNum = $row[0];
+        }
+    } else {
+        $errstr = "error to query : " . mysqli_error($connect);
+    }
 //echo $productlist ;
 //关闭数据库
 $db->close_connect($connect);
@@ -264,9 +326,10 @@ $db->close_connect($connect);
         "productImage" => $productImage,
         "productStock" => $productStock,
         "productPrice" => $productPrice,
-        "error" => $errstr ,
- );
-echo json_encode($data);
+        "totalNum" => $totalNum,
+        "error" => $errstr,
+    );
+    echo json_encode($data);
 }
 
 ?>

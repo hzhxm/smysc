@@ -37,4 +37,10 @@ $(function () {
         $("dd").hide();
         $("dl").append(data.cartlist);
     }
+
+    $("#checkAll").click(function(){
+        $("[name = chkItem]:checkbox").attr("checked", true);
+    });
+
+
 });

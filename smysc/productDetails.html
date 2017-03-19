@@ -38,7 +38,7 @@ margin: -1px;
 
 <body>
 
-
+<div id="tocart_overlayout" class="">
 <header class="header">
 	<div class="fix_nav">
 		<div style="max-width:768px;margin:0 auto;background:#000;position: relative;">
@@ -50,6 +50,9 @@ margin: -1px;
 <input type="hidden" id="prodId" value="663"/>
 <input id="currSkuId" value="" type="hidden"/>
 
+	<div class="big_img amplifyImg"><!--注意：此处的amlifyImg不可少-->
+		<img  src="images/goods007.jpg"/>
+	</div>
 <div class="tocart" style="display: none">
 	<!--
 	<div class="tocart_overlayout">
@@ -236,7 +239,7 @@ margin: -1px;
 		</a>
 		<div class="buy-btn-fix">
 		    <a class="btn btn-info btn-cart"  id="addtocart">加入购物车</a>
-		    <a class="btn btn-danger btn-buy" onclick="buyNow();" href="javascript:void(0);">立即购买</a>
+		    <a class="btn btn-danger btn-buy" id="bynow">立即购买</a>
 		</div>
 	</div>
 </div>
@@ -247,6 +250,15 @@ margin: -1px;
 		<!--<div class="buy-btn-fix">-->
 			<!--<a class="btn btn-danger btn-block btn-cart">确定</a>-->
 		<!--</div>-->
+	<!--</div>-->
+</div>
+
+<div class="fixed-foot" id="bynow_submit" style="display: none">
+	<a class="btn btn-danger btn-block btn-lg btn-cart">确定</a>
+	<!--<div class="fixed_inner">-->
+	<!--<div class="buy-btn-fix">-->
+	<!--<a class="btn btn-danger btn-block btn-cart">确定</a>-->
+	<!--</div>-->
 	<!--</div>-->
 </div>
 
@@ -274,7 +286,7 @@ margin: -1px;
 	</div>
   </div>
 </footer>
-
+</div>
 
 
 <script type="text/javascript">

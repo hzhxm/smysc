@@ -1,0 +1,316 @@
+.icona {
+    width: 100%;
+    height: 35px;
+    background: #F1F1F1;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+.sjsc-title1 {
+    width: 100%;
+    height: 35px;
+    background: #F1F1F1;
+    border-bottom: 1px solid #D3D3D3;
+    display: block;
+    font-size: 16px;
+    color: #333;
+}
+
+.sjsc-title1 .sjsc-t1l {
+    height: 35px;
+    line-height: 35px;
+    font-weight: normal;
+    padding: 0 5px;
+}
+
+.f-l {
+    float: left;
+}
+
+.h3{
+    font-size: 100%;
+}
+
+.drdd-info1 {
+    background: #fff;
+    height: 55px;
+    line-height: 55px;
+    padding: 0 15px;
+    border-bottom: 1px solid #eee;
+
+}
+
+dl {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+dt {
+    display: block;
+}
+
+.drdd-info1 dt {
+    float: left;
+}
+
+.drdd-info1 dt p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+
+.drdd-info1 dd {
+    float: right;
+}
+
+.to-buy {
+    width: 100%;
+}
+
+.to-buy .buy-list {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 3%;
+}
+
+.to-buy .buy-list ul {
+    position: relative;
+    overflow: hidden;
+    width: 92%;
+    padding: 4%;
+    border-bottom: solid 1px #ccc;
+}
+
+ul{
+    list-style: none;
+    display: block;
+}
+
+figure{
+    display: block;
+}
+
+.to-buy .buy-list ul figure {
+    float: left;
+    width: 30%;
+    height: 8em;
+    overflow: hidden;
+}
+
+.to-buy .buy-list ul figure img {
+    width: 100%;
+    min-height: 5em;
+}
+
+.to-buy .buy-list ul a {
+    display: block;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.to-buy .buy-list ul li {
+    float: left;
+    width: 66%;
+    margin-left: 4%;
+    overflow: hidden;
+}
+
+.to-buy .buy-list ul li h3 {
+    font-size: 1.35em;
+    color: #333;
+    font-weight: normal;
+    text-align: justify;
+}
+
+.to-buy .buy-list ul li span {
+    font-size: 1.169em;
+    color: #999;
+    text-align: justify;
+    line-height: 1.6;
+}
+.to-buy .buy-list ul li b {
+    position: absolute;
+    right: 5%;
+    bottom: 30%;
+    font-size: 1.9em;
+    color: #FC605A;
+    font-weight: normal;
+}
+
+.to-buy .buy-list ul li small {
+    position: absolute;
+    right: 5%;
+    bottom: 15%;
+    font-size: 1.25em;
+    color: #999;
+}
+
+.to-buy .buy-list dl {
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+}
+
+.to-buy .buy-list dl dt {
+    width: 90%;
+    padding: 3% 5%;
+}
+
+.to-buy .buy-list dl dd {
+    width: 90%;
+    padding: 4% 5%;
+    font-size: 1.35em;
+    border-bottom: solid 1px #ccc;
+    overflow: hidden;
+}
+
+.to-buy .buy-list dl dd span {
+    color: #666;
+    float: left;
+}
+
+.to-buy .buy-list dl dd small {
+    color: #999;
+    float: right;
+}
+
+small{
+    font-size: 80%;
+}
+
+.to-buy .buy-list dl dt textarea {
+    width: 90%;
+    padding: 3% 5%;
+    font-size: 1.169em;
+    color: #666;
+    line-height: 1.6;
+    text-align: justify;
+    border-radius: 0.3em;
+    border: solid 1px #c8c8c8;
+}
+
+textarea{
+    margin: 0;
+    padding: 0;
+    border-width: 1px;
+    outline: none;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -o-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    box-sizing: content-box;
+    resize: none;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(255,0,0,0);
+    font-family: "microsoft yahei";
+    overflow: auto;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+.buy-footer {
+    width: 90%;
+    padding: 3% 5%;
+    background-color: #fff;
+    border-top: solid 1px #ccc;
+}
+
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.buy-footer p {
+    width: 100%;
+    display: block;
+    text-align: center;
+    background-color: #fff;
+}
+
+.buy-footer p small {
+    font-size: 1.169em;
+    color: #666;
+}
+
+.buy-footer p b {
+    font-size: 1.7em;
+    color: #FC605A;
+    font-weight: normal;
+}
+
+b{
+    font-weight: bold;
+}
+
+.buy-footer input[type="button"] {
+    width: 100%;
+    margin-top: 2%;
+    color: #fff;
+    border: none;
+    padding: 3% 0;
+    font-size: 1.45em;
+    border-radius: 0.3em;
+    background-color: #FC605A;
+}
+
+.buy-info-overlayout{
+    background: #000;
+    filter: alpha(opacity=20); /* IE的透明度 */
+    opacity: 0.2;  /* 透明度 */
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    z-index: 100; /* 此处的图层要大于页面 */
+}
+
+.topay{
+    top:40%;
+    position: fixed;
+    z-index: 101;
+    height: 80%;
+    width: 100%;
+    background-color: white;
+}
+
+.topay dl {
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+}
+
+.topay dd {
+    width: 90%;
+    padding: 4% 5%;
+    font-size: 1.35em;
+    border-bottom: solid 1px #ccc;
+    overflow: hidden;
+}
+
+.topaydl dd span {
+    color: #666;
+    float: left;
+}
+
+.topay dl dd small {
+    color: #999;
+    float: right;
+}
+
+.topay input[type="button"] {
+    width: 100%;
+    margin-top: 30%;
+    color: #fff;
+    border: none;
+    padding: 3% 0;
+    font-size: 1.45em;
+    border-radius: 0.3em;
+    background-color: #00b4ff;
+}
