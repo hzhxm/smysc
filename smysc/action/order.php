@@ -3,24 +3,13 @@
 
 $userId = 0;
 $OrderState =  null;
-//
-//
-//$data = array(
-//    "userId"=> $userId  ,
-//    "OrderState"=>$OrderState,
-//);
-//
-//echo json_encode($data);
-//
-//exit ;
-
 
 //通用配置
 require_once "../dbclass.php";
 $orderlist = array(); //商品类型，列表信息
 
 //$userId =  1001;
-//$OrderState =  "waitForPay";
+//$OrderState =  "all";
 
 if($_POST['userId']&&$_POST['OrderState']){
 
@@ -31,12 +20,17 @@ if($_POST['userId']&&$_POST['OrderState']){
     $db = new dbclass("jim");
     $connect= $db->sql_init();
 
+    $ord = "Addtime desc" ; //desc asc
+    $order = "order by $ord"; // 默认是时间倒叙排序
+
+    //$limnit = "LIMIT 0 ,3" ;
+
     //获取category 列表信息
     if(strcasecmp($OrderState,"all")== 0){
         //忽略大小写比较
-        $result = $db->my_query($connect,"SELECT * FROM orderlist WHERE userID='$userId'");
+        $result = $db->my_query($connect,"SELECT * FROM orderlist WHERE userID='$userId' $order ");
     }else{
-        $result = $db->my_query($connect,"SELECT * FROM orderlist WHERE userID='$userId' AND OrderState='$OrderState'");
+        $result = $db->my_query($connect,"SELECT * FROM orderlist WHERE userID='$userId' AND OrderState='$OrderState' $order ");
     }
     if($result){
         while ($row = $db->my_fetch_array($result,MYSQL_BOTH)) {

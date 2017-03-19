@@ -1,7 +1,5 @@
 <?php
 
-
-
 require_once "../dbclass.php";
 $order = "proID desc";
 $proList =array();

@@ -180,9 +180,9 @@ function getSortListInfo(data){
 			str += '			<p class="mb0"><del class="old-price">¥'+ productlist[i]['proOriginalPrice'] +'</del></p>';
 
 			//begin for test code
-			str +=  '<p class="p-title"> proID = '+ productlist[i]['proID'] + '</p>';
-			str +=  '<p class="p-title"> 评论数量 = '+ productlist[i]['proCommentNub'] + '</p>';
-			str +=  '<p class="p-title"> 销量 '+ productlist[i]['proSoldVolume'] + '</p>';
+			//str +=  '<p class="p-title"> proID = '+ productlist[i]['proID'] + '</p>';
+			//str +=  '<p class="p-title"> 评论数量 = '+ productlist[i]['proCommentNub'] + '</p>';
+			//str +=  '<p class="p-title"> 销量 '+ productlist[i]['proSoldVolume'] + '</p>';
 			//end for test code
 
 			str += '		</div>';

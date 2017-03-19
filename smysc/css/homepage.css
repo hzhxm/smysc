@@ -1,0 +1,32 @@
+/*搜索栏配置*/
+.header .img-responsive{text-align:center;background:#ccc;border-radius: 5px;border:none;height:34px;vertical-align:middle;clear:both;padding:0px;width:42px;}
+.fix_nav{max-width:768px;margin:0 auto;height: 44px;position: relative;background:#000000;}
+
+/*焦点切换图配置*/
+#slide .bd{overflow:hidden; position:relative;}
+#slide .bd ul{width: 3840px; position: relative; overflow: hidden; padding: 0px; margin: 0px; transition-duration: 200ms; transform: translateX(-768px);}
+#slide .bd li{display: table-cell; vertical-align: top; width: 768px;}
+
+/*商品详细信息*/
+.ssjg-ul1{ background:#F7F7F7; padding:10px 2%;}
+.ssjg-ul1 li{ float:left; width:48%; border:1px solid #E5E5E5; background:#fff; margin-bottom:10px;}
+.ssjg-ul1 li:nth-child(2n){ float:right;}
+.ssjg-ul1 li .ssjg-tu{ height:105px; padding:5px 0; text-align:center;}
+.ssjg-tu img{ display:inline-block; height:100%;}
+.ssjg-ul1 li h3{ padding:0 5px; font-weight:normal;white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+.ssjg-ul1 li h3 a{ font-size:12px; color:#7F7F7F;}
+.ssjg-ul1 li .ssjg-dl1{ padding:0 5px;}
+.ssjg-dl1 dt{ float:left;}
+.ssjg-dl1 dt p{ font-size:12px; color:#A0A0A0;}
+.ssjg-p1 span{ color:#DB3751; margin-left:5px;}
+.ssjg-p2 span{ color:#707070; margin-left:5px;}
+.ssjg-dl1 dd{ float:right;}
+.ssjg-dl1 dd img{ display:inline-block; width:25px; margin-top:5px;}
+
+/* 本例子css -------------------------------------- */
+
+.sy-info1{ width:100%; background:#fFF; margin-top:5px; border-bottom:1px solid #E6E6E6; border-top:1px solid #E6E6E6;}
+.sy-info1 .sy-ul1{ height:30px; border-bottom:1px solid #e6e6e6;}
+.sy-ul1 li{ float:left; width:25%; text-align:center; height:30px; line-height:30px;}
+.sy-ul1 li a{ display:inline-block; font-size:13px; color:#525252;}
+.sy-ul1 .current a{ border-bottom:1px solid #E74E5D;color:#E74E5D;}
