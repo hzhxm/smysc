@@ -10,6 +10,13 @@ $(function(){
         $(".topay").fadeIn();
         $("#buy-info-overlayout").addClass("buy-info-overlayout");
         $("#buy-info-overlayout").css("position","fixed");
+        $(".pay_price").text($("footer > p > b").text());
+    });
+
+    $(".pay_close").click(function () {
+        $(".topay").fadeOut();
+        $("#buy-info-overlayout").removeClass("buy-info-overlayout");
+        $("#buy-info-overlayout").css("position","absolute");
     });
 });
 

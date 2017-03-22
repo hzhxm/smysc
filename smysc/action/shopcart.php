@@ -35,7 +35,7 @@ $userId =1;
             $cartlist .= '<input type="checkbox" name="chkItem" value="'. $row['product_price'] . '"/>';
             $cartlist .= '<a href="productDetails.html" class="goodsPic"><img src="' . $row['product_image'] . '"/></a>';
             $cartlist .= '<div class="goodsInfor">';
-            $cartlist .= '<h2><a href="productDetails.html">' . $row['product_title'] . '</a><span>' . $row['product_num'] . '</span></h2>';
+            $cartlist .= '<h2><a href="productDetails.html">' . $row['product_title'] . '</a><span class="proNum">' . $row['product_num'] . '</span></h2>';
             $cartlist .= '<div class="priceArea"><strong>' . $row['product_price'] . '</strong><del>' . $row['product_price'] . '</del></div>';
             $cartlist .= '<div class="numberWidget">';
             $cartlist .= '<input type="button" value="-" class="minus"/>';

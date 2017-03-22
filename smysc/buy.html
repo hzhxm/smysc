@@ -38,22 +38,26 @@
 
 	<dl>
 		<dd>
-			<span>X</span>
-			<b>付款详情</b>
+			<span aria-hidden="true" class="pay_close">&times;</span>
+			<b class="pay_title">付款详情</b>
 		<dd>
 			<span>支付宝账号</span>
 			<small>123456@qq.com</small>
 		</dd>
 		<dd>
 			<span>付款方式</span>
+			<img src="images/right.png" >
 			<small>建设银行</small>
+
 		</dd>
-		<dd>
+		<dd class="pay_price_row">
 			<span>需付款</span>
-			<small>￥98.00</small>
+			<span class="pay_price">￥98.00</span>
 		</dd>
 	</dl>
-	<input type="button" class="topay-submit" value="确认付款"/>
+	<footer class="pay-footer fixed-footer">
+		<input type="button" class="topay-submit" value="确认付款"/>
+	</footer>
 </div>
 
 <div class="buy-info">
