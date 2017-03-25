@@ -160,6 +160,7 @@ function sendData(){
     $("#list_form").ajaxForm().ajaxSubmit({
         success:function(result) {
             hideFirstAndAppendLoading();
+            //$(".item-list").html(getSortListInfo1(result));
             $(".item-list").html(getSortListInfo(result));
         },
         error:function(XMLHttpRequest, textStatus,errorThrown) {
@@ -193,7 +194,8 @@ function appendData(){
     $("#list_form").ajaxForm().ajaxSubmit({
         success:function(result) {
             hideFirstAndAppendLoading();
-            $(".item-list").append(getSortListInfo(result));
+            //$(".item-list").append(getSortListInfo1(result));
+            $(".ssjg-ul1").append(getAppendSortListInfo(result));
         },
         error:function(XMLHttpRequest, textStatus,errorThrown) {
             $("#container").html("");
@@ -213,7 +215,60 @@ function isBlank(_value){
     return false;
 }
 
+function getAppendSortListInfo(data) {
+    var str = "";
+    var productlist = data.productlist;
+    if (productlist) {
+        for (var i = 0; i < productlist.length; i++) {
+            str += '<li>';
+            str += ' <div class="ssjg-tu">';
+            str += '<a href="#"><img src="img/' + productlist[i]['proPreviewImg'] + '"></a>';
+            str += ' </div>';
+            str += ' <h3><a href="#"> ' + productlist[i]['detaiTitle'] + '</a></h3>';
+            str += ' <dl class="ssjg-dl1">';
+            str += '<dt>';
+            str += ' <span class="ssjg-p1">￥' + productlist[i]['proSellPrice'] + '</span> <span class="ssjg-p2">销售量4680</span>';
+            str += ' </dt>';
+            str += '<div style="clear:both;"></div>';
+            str += ' </dl>';
+            str += '</li>';
+        }
+    }
+
+    return str;
+    //$(".item-list").html(str);
+}
+
 function getSortListInfo(data) {
+    var str = "";
+    var productlist = data.productlist;
+    if (productlist) {
+        str += '<input type="hidden" id="ListTotal" value="3">';
+        str += '<ul class="ssjg-ul1" style="padding-top:0;">';
+
+        for (var i = 0; i < productlist.length; i++) {
+            str += '<li>';
+            str += ' <div class="ssjg-tu">';
+            str += '<a href="#"><img src="img/' + productlist[i]['proPreviewImg'] + '"></a>';
+            str += ' </div>';
+            str += ' <h3><a href="#"> ' + productlist[i]['detaiTitle'] + '</a></h3>';
+            str += ' <dl class="ssjg-dl1">';
+            str += '<dt>';
+            str += ' <span class="ssjg-p1">￥' + productlist[i]['proSellPrice'] + '</span> <span class="ssjg-p2">销售量4680</span>';
+            str += ' </dt>';
+            str += '<div style="clear:both;"></div>';
+            str += ' </dl>';
+            str += '</li>';
+        }
+       // str += ' <div style="clear:both;"></div>';
+        str += ' </ul>';
+    }
+
+    return str;
+    //$(".item-list").html(str);
+}
+
+function getSortListInfo1(data) {
     var str = "";
     var productlist = data.productlist;
     if (productlist) {
