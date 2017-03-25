@@ -1,0 +1,23 @@
+/*商品详细信息*/
+.ssjg-ul1{clear: both; padding:5px 0;}
+.ssjg-ul1 li{ float:left; width:50%; border:1px solid #E5E5E5; background:#fff; margin-bottom:5px;margin-top: 0;margin-left: 0;margin-right: auto;}
+.ssjg-ul1 li:nth-child(2n){ float:right;}
+.ssjg-ul1 li .ssjg-tu{ height:50%; padding:5px 0; text-align:center;}
+.ssjg-tu img{ display:inline-block; height:100%;width: 50%;}
+.ssjg-ul1 li h3{ padding:0 5px; font-weight:normal;white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+.ssjg-ul1 li h3 a{ font-size:12px; color:#7F7F7F;margin-left: 5px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.ssjg-ul1 li .ssjg-dl1{ padding:0 5px;}
+.ssjg-dl1 dt{ float:left;width: 100%;margin-bottom: 5px;}
+.ssjg-dl1 dt p{ font-size:12px; color:#A0A0A0;}
+.ssjg-p1{
+    float:left;
+    color:#DB3751;
+    margin-left:5px;
+    width: 30%;
+}
+.ssjg-p2{
+    float:right;
+    color:#707070; margin-right:5px;
+}
+.ssjg-dl1 dd{ float:right;}
+.ssjg-dl1 dd img{ display:inline-block; width:25px; margin-top:5px;}

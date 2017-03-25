@@ -5,6 +5,7 @@ $(function () {
 });
 
 
+var prolist_style = "two" ; // "one"  "two"
 
 function ajaxForhomepageFocusAndnav(){
 
@@ -154,6 +155,26 @@ function productlist_handle(){
     registerClickFunction();//注册每次点击提交表单
 }
 
+function  appendProductList(result){
+    if(prolist_style == "one"){
+        $(".item-list").append(getSortListInfo1(result));
+    }else if((prolist_style == "two")){
+        $(".ssjg-ul1").append(getAppendSortListInfo(result));
+    }else {
+        $(".ssjg-ul1").append(getAppendSortListInfo(result));
+    }
+}
+
+function  showProductList(result){
+    if(prolist_style == "one"){
+        $(".item-list").html(getSortListInfo1(result));
+    }else if((prolist_style == "two")){
+        $(".item-list").html(getSortListInfo(result));
+    }else {
+        $(".item-list").html(getSortListInfo(result));
+    }
+}
+
 function sendData(){
 
     showFirstLoading();
@@ -161,7 +182,8 @@ function sendData(){
         success:function(result) {
             hideFirstAndAppendLoading();
             //$(".item-list").html(getSortListInfo1(result));
-            $(".item-list").html(getSortListInfo(result));
+            //$(".item-list").html(getSortListInfo(result));
+            showProductList(result);
         },
         error:function(XMLHttpRequest, textStatus,errorThrown) {
             $("#container").html("");
@@ -172,6 +194,27 @@ function sendData(){
         ,dataType: "json"
     })
 }
+
+function appendData(){
+    showAppendLoading();
+    $("#list_form").ajaxForm().ajaxSubmit({
+        success:function(result) {
+            hideFirstAndAppendLoading();
+            //$(".item-list").append(getSortListInfo1(result));
+            //$(".ssjg-ul1").append(getAppendSortListInfo(result));
+            appendProductList(result);
+
+        },
+        error:function(XMLHttpRequest, textStatus,errorThrown) {
+            $("#container").html("");
+            hideFirstAndAppendLoading();;
+            floatNotify.simple("查找失败");
+            return false;
+        }
+        , dataType: "json"
+    });
+}
+
 
 function showFirstLoading(){
     $('#ajax_loading').show();
@@ -186,25 +229,6 @@ function showAppendLoading(){
 function hideFirstAndAppendLoading(){
     $('#ajax_loading').hide();
     $('#ajax_loading_append').hide();
-}
-
-
-function appendData(){
-    showAppendLoading();
-    $("#list_form").ajaxForm().ajaxSubmit({
-        success:function(result) {
-            hideFirstAndAppendLoading();
-            //$(".item-list").append(getSortListInfo1(result));
-            $(".ssjg-ul1").append(getAppendSortListInfo(result));
-        },
-        error:function(XMLHttpRequest, textStatus,errorThrown) {
-            $("#container").html("");
-            hideFirstAndAppendLoading();;
-            floatNotify.simple("查找失败");
-            return false;
-        }
-        , dataType: "json"
-    });
 }
 
 /**判断是否为空**/
