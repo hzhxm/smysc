@@ -5,6 +5,8 @@ $order = "proID desc";
 $proList =array();
 $curPageNO=0;
 $pageSize=0;
+$rowNub=2;//default is 2
+
 //<input type="hidden" id="curPageNO" name="curPageNO"  value=""/>
 //			    <input type="hidden" id="pageSize" name="pageSize"  value="5"/>
 
@@ -13,6 +15,7 @@ $pageSize=0;
         $order = $_POST["orders"];
         $curPageNO=intval($_POST["curPageNO"]);
         $pageSize=intval($_POST["pageSize"]);
+        $rowNub=intval($_POST["rowNub"]);
         $curOffest=$curPageNO*$pageSize ;
         //连接数据库
         $db = new dbclass("jim");
@@ -36,9 +39,14 @@ $pageSize=0;
     }
 
 
+
 $data = array(
     "order"=> $order,
     "productlist"=> $proList,
+    "curPageNO"=>$curPageNO,
+    "pageSize"=>$pageSize,
+    "curOffest"=>$curOffest,
+    "rowNub"=>$rowNub,
 );
 
 echo json_encode($data);

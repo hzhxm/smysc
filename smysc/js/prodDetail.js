@@ -244,7 +244,8 @@ function getPropValImgs(valId){
 			  for(var j=0;j<imgList.length;j++){
 
 				  str+= '<li style="display: table-cell; vertical-align: middle; max-width: 768px;">';
-				  str+= '<a href="#"><img style="max-width:100vw;max-height:80vw;margin:auto;" src="'+photoPath+imgList[j]+'"></a>';
+				  //str+= '<a href="#"><img style="max-width:100vw;max-height:80vw;margin:auto;" src="'+photoPath+imgList[j]+'"></a>';
+				  str+= '<a href="#"><img style="max-width:60vw;max-height:45vw;margin:auto;" src="'+photoPath+imgList[j]+'"></a>';
 				  str+= '</li>';
 				  
 				  strCounts+= '<li></li>';
@@ -283,7 +284,9 @@ function set_focus_imgae(data){
 	for(var j=0;j<3;j++){
 
 		str+= '<li style="display: table-cell; vertical-align: middle; max-width: 768px;">';
-		str+= '<a href="#"><img style="max-width:100vw;max-height:80vw;margin:auto;" src="'+imgList[j]+'"></a>';
+		//str+= '<a href="#"><img style="max-width:100vw;max-height:80vw;margin:auto;" src="'+imgList[j]+'"></a>';
+		str+= '<a href="#"><img style="max-width:80vw;max-height:60vw;margin:auto;" src="'+imgList[j]+'"></a>';
+
 		str+= '</li>';
 		strCounts+= '<li></li>';
 	}

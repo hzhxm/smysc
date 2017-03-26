@@ -5,7 +5,7 @@ $(function () {
 });
 
 
-var prolist_style = "two" ; // "one"  "two"
+var prolist_style = 2 ; // 用于设置每行显示多少个产品信息  1 2
 
 function ajaxForhomepageFocusAndnav(){
 
@@ -22,8 +22,6 @@ function ajaxForhomepageFocusAndnav(){
             //配置导航栏
             nav_config(data);
 
-            ////配置商品列表
-           //productlist(data);
         },
 
         error: function (data, status, e) {
@@ -108,42 +106,6 @@ function nav_config(data){
 
 }
 
-function productlist(data){
-    //alert( $(".ssjg").html());
-    //return ;
-    var pl = data.productlist ;
-    var str = "";
-
-    if(!(pl)){
-        return ;
-    }
-
-    for(var j = 0 ;j<=4 ;j++) {
-//pl.length-j
-        str += '<ul class="ssjg-ul1" style="display: table-cell; vertical-align: top; width: 345px;">' ;
-        for(var i=0;i<pl.length-j;i++){
-            str += '<li >';
-            str += '<div class="ssjg-tu">';
-            str += '<a href="'+pl[i]['url']+'#"> <img src = "'+pl[i]['image']+'"></a> </div>';
-
-            str += '<h3><a href="'+pl[i]['url']+'#">'+pl[i]['summary']+'</a></h3>';
-            str += '<dl class="ssjg-dl1">';
-            str += '<dt>';
-            str += '<p class="ssjg-p1">原价<span>'+pl[i]['yuanjia']+'</span></p>';
-            str += '<p class="ssjg-p2">折后价<span>'+pl[i]['zhehoujia']+'</span></p>';
-            str += '</dt>';
-            str += '<dd><a href="'+pl[i]['url']+'#"><img src="images/sjsc-09.gif"></a></dd>';
-            str += '<div style="clear:both;"></div>';
-            str += '</dl>';
-            str += '</li>';
-        }
-        //循环完成后执行
-        str += '<div style="clear:both;"></div>';
-        str += '</ul>';
-    }
-
-    $(".ssjg").html(str);
-}
 
 
 //begin zjg add for product list form
@@ -156,9 +118,9 @@ function productlist_handle(){
 }
 
 function  appendProductList(result){
-    if(prolist_style == "one"){
+    if(prolist_style == 1){
         $(".item-list").append(getSortListInfo1(result));
-    }else if((prolist_style == "two")){
+    }else if((prolist_style == 2)){
         $(".ssjg-ul1").append(getAppendSortListInfo(result));
     }else {
         $(".ssjg-ul1").append(getAppendSortListInfo(result));
@@ -166,9 +128,9 @@ function  appendProductList(result){
 }
 
 function  showProductList(result){
-    if(prolist_style == "one"){
+    if(prolist_style == 1){
         $(".item-list").html(getSortListInfo1(result));
-    }else if((prolist_style == "two")){
+    }else if((prolist_style == 2)){
         $(".item-list").html(getSortListInfo(result));
     }else {
         $(".item-list").html(getSortListInfo(result));
@@ -178,6 +140,7 @@ function  showProductList(result){
 function sendData(){
 
     showFirstLoading();
+    $("#rowNub").val(prolist_style); //设置每行显示多少行
     $("#list_form").ajaxForm().ajaxSubmit({
         success:function(result) {
             hideFirstAndAppendLoading();
@@ -197,6 +160,7 @@ function sendData(){
 
 function appendData(){
     showAppendLoading();
+    $("#rowNub").val(prolist_style); //设置每行显示多少行
     $("#list_form").ajaxForm().ajaxSubmit({
         success:function(result) {
             hideFirstAndAppendLoading();
@@ -246,7 +210,7 @@ function getAppendSortListInfo(data) {
         for (var i = 0; i < productlist.length; i++) {
             str += '<li>';
             str += ' <div class="ssjg-tu">';
-            str += '<a href="#"><img src="img/' + productlist[i]['proPreviewImg'] + '"></a>';
+            str += '<a href="productDetails.html?proid='+ productlist[i]['proID']+'"><img src="img/' + productlist[i]['proPreviewImg'] + '"></a>';
             str += ' </div>';
             str += ' <h3><a href="#"> ' + productlist[i]['detaiTitle'] + '</a></h3>';
             str += ' <dl class="ssjg-dl1">';
@@ -273,7 +237,7 @@ function getSortListInfo(data) {
         for (var i = 0; i < productlist.length; i++) {
             str += '<li>';
             str += ' <div class="ssjg-tu">';
-            str += '<a href="#"><img src="img/' + productlist[i]['proPreviewImg'] + '"></a>';
+            str += '<a href="productDetails.html?proid='+ productlist[i]['proID']+'"><img src="img/' + productlist[i]['proPreviewImg'] + '"></a>';
             str += ' </div>';
             str += ' <h3><a href="#"> ' + productlist[i]['detaiTitle'] + '</a></h3>';
             str += ' <dl class="ssjg-dl1">';
@@ -299,7 +263,7 @@ function getSortListInfo1(data) {
         str += '<input type="hidden" id="ListTotal" value="3">';
         for (var i = 0; i < productlist.length; i++) {
 
-            str += '<a href="views.html">';
+            str += '<a href="productDetails.html?proid='+ productlist[i]['proID']+'">';
             str += '	<div class="hproduct clearfix" style="background:#fff;border-top:0px;">';
             str += '		<div class="p-pic"><img style="max-height:100px;margin:auto;" class="img-responsive" src="img/' + productlist[i]['proPreviewImg'] + '"></div>';
             str += '		<div class="p-info">';

@@ -1,6 +1,6 @@
 /*商品详细信息*/
 .ssjg-ul1{clear: both; padding:5px 0;}
-.ssjg-ul1 li{ float:left; width:50%; border:1px solid #E5E5E5; background:#fff; margin-bottom:5px;margin-top: 0;margin-left: 0;margin-right: auto;}
+.ssjg-ul1 li{ float:left; width:50%;height: 171px; border:1px solid #E5E5E5; background:#fff; margin-bottom:5px;margin-top: 0;margin-left: 0;margin-right: auto;}
 .ssjg-ul1 li:nth-child(2n){ float:right;}
 .ssjg-ul1 li .ssjg-tu{ height:50%; padding:5px 0; text-align:center;}
 .ssjg-tu img{ display:inline-block; height:100%;width: 50%;}
