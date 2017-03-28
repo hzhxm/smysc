@@ -1,0 +1,163 @@
+
+.delu-info1 {
+    width: 30%;
+    margin: 30px auto 0;
+}
+.delu-info1 img {
+    display: inline-block;
+    width: 100%;
+}
+
+.delu-info2 {
+    padding: 0 10px;
+    margin-top: 20px;
+}
+.delu-info2 .delu-ul1 {
+    width: 100%;
+}
+.delu-ul1 li {
+    width: 100%;
+    height: 41px;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+}
+.delu-ul1 li input {
+    height: 41px;
+    width: 85%;
+    border: 0;
+    padding-left: 35px;
+    font-size: 14px;
+}
+.delu-ul1 .delu-li1 input {
+    background: url(../images/login.png) no-repeat 10px center;
+    background-size: 20px;
+}
+.delu-ul1 .delu-li2 input {
+    background: url(../images/password.png) no-repeat 10px center;
+    background-size: 20px;
+}
+.delu-info2 .delu-btn1 {
+    width: 100%;
+    height: 35px;
+    font-size: 14px;
+    color: #fff;
+    border: 0;
+    background: #E64D5D;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+.delu-info2 .delu-p1 {
+    line-height: 23px;
+}
+.delu-p1 a {
+    font-size: 12px;
+    color: #656565;
+}
+
+.delu-info3 {
+    text-align: center;
+    margin: 30px 0;
+}
+.delu-info3 h3 {
+    font-weight: normal;
+    font-size: 14px;
+    color: #333;
+}
+.delu-info3 .delu-ul2 {
+    margin-top: 10px;
+}
+.delu-ul2 li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.delu-ul2 li img {
+    display: inline-block;
+    height: 25px;
+}
+
+/*公用样式*/
+.f-l{float:left;}
+.f-r{float:right;}
+
+
+/*注册*/
+.sczc-ul1{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+.sczc-ul1 li {
+    height: 35px;
+    line-height: 35px;
+    padding-left: 5px;
+    margin: 0 5px;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+}
+.sczc-ul1 li .sczc-p1 {
+    width: 40px;
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+.sczc-p1 img {
+    display: inline-block;
+    height: 20px;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+.sczc-ul1 li .sczc-ipt1 {
+    width: 71%;
+    height: 30px;
+    border: 0;
+    font-size: 12px;
+    color: #999;
+}
+.sczc-ul1 li .sczc-ipt2 {
+    width: 42%;
+    height: 30px;
+    border: 0;
+    font-size: 12px;
+    color: #999;
+}
+.sczc-ul1 li .sczc-a1 {
+    width: 85px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 4px;
+    font-size: 12px;
+    color: #333;
+    background: #EDEDED;
+    margin-right: 10px;
+}
+
+.sczc-btn1 {
+    width: 94%;
+    height: 30px;
+    font-size: 14px;
+    color: #fff;
+    border: 0;
+    display: block;
+    margin: 20px auto 0;
+    background: #E64D5D;
+    border-radius: 5px;
+}
+
+.sczc-ty {
+    width: 94%;
+    margin: 10px auto 0;
+}
+.sczc-ty input {
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+.sczc-ty a {
+    font-size: 12px;
+    color: #333;
+    text-decoration: underline;
+}
