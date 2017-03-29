@@ -63,7 +63,7 @@ elseif($action == "registerUser")
 
 function loginAuth($username,$password){
     $errstr = "no error";
-    $flag = false;
+    $userid = "-1";
     //连接数据库
     $db = new dbclass("jim");
     $connect = $db->sql_init();
@@ -76,7 +76,6 @@ function loginAuth($username,$password){
     if ($result) {
         while ($row = $db->my_fetch_array($result, MYSQLI_BOTH)) {
             $userid = $row["userID"];
-            $flag = true;
         }
 
     } else {
@@ -90,7 +89,7 @@ function loginAuth($username,$password){
     //$totalPrice = ((int)$productPrice) ;//* $num;
     //配置ajax返回数据
     $data = array(
-        "flag" => $flag,
+        "userid" => $userid,
         "error" => $errstr,
     );
     echo json_encode($data);

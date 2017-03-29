@@ -22,9 +22,20 @@ $(document).ready(function(){
             dataType: "json",
             success: function (data, status) {
                 //ajax 成功
-                alert(data.flag);
-                if(data)
+                if(data.userId != "-1")
                 {
+                    $.session.set('userId', data.userId)
+                    var curUrl = window.location.search;
+                    var frUrl = curUrl.substr(4);
+                    if(frUrl == 1){//from self link button
+                        location.href="self.html";
+                    }
+                    else if(frUrl == 2){//from shopcart link button
+                        location.href="shopcart.html";
+                    }
+                    else if(frUrl == 3 || frUrl == 4){//from bynow link button or tocart link button
+                        location.href="productDetails.html";
+                    }
 
                 }
                 else
@@ -81,4 +92,6 @@ $(document).ready(function(){
     $("#to-register").click(function(){
         location.href="register.html";
     });
+
+
 });

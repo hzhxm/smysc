@@ -8,6 +8,32 @@ $(document).ready(function() {
 	   $(".order_top_count").hide();
    });
 
+    $("#self").click(function (){
+        //$.session.clear();
+        userId = $.session.get('userId');
+        if(userId != "-1" && userId)
+        {
+            location.href="self.html";
+        }
+        else {
+            location.href="login.html?fr=1";
+        }
+
+    });
+
+    $("#shopcart").click(function (){
+        //$.session.clear();
+        userId = $.session.get('userId');
+        if(userId != "-1" && userId)
+        {
+            location.href="shopcart.html";
+        }
+        else {
+            location.href="login.html?fr=2";
+        }
+
+    });
+
     ajaxgGetCategory();
 });
 

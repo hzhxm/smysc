@@ -1,7 +1,34 @@
+var userId = "-1";
 $(function () {
 
     ajaxForhomepageFocusAndnav();//焦点图和导航菜单的处理
     productlist_handle();//推荐的商品列表处理
+
+    $("#self").click(function (){
+        $.session.clear();
+        userId = $.session.get('userId');
+        if(userId != "-1" && userId)
+        {
+            location.href="self.html";
+        }
+        else {
+            location.href="login.html?fr=1";
+        }
+
+    });
+
+    $("#shopcart").click(function (){
+        $.session.clear();
+        userId = $.session.get('userId');
+        if(userId != "-1" && userId)
+        {
+            location.href="shopcart.html";
+        }
+        else {
+            location.href="login.html?fr=2";
+        }
+
+    });
 });
 
 
