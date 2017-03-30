@@ -150,8 +150,8 @@
 }
 
 .details_con{
-    margin: 3% 3%;
-    border-bottom: 1px solid #CCCCCC;
+    margin: 3px 0;
+    /*border-bottom: 1px solid #CCCCCC;*/
 }
 
 .details_con {
@@ -248,6 +248,22 @@
 }
 .details_con .disabled {
     background-position: center 10%;
+}
+
+.one-comment{
+    padding:5px 0;
+    border-top: 2px solid #CCCCCC;
+}
+
+.one-comment span{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.one-comment .context{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #000000;
 }
 
 

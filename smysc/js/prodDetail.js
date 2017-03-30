@@ -324,8 +324,8 @@ function set_focus_imgae(data){
 
 function setPro_detail_para_commment(data){
 
-	var imgList = data.proDetailDes[0] ; //商品详细信息的图片列表信息
-	var para = data.proParameter[0] ;    //商品参数的图片列表信息
+	var imgList = data.proDetailDes ; //商品详细信息的图片列表信息
+	var para = data.proParameter ;    //商品参数的图片列表信息
 	var comment =data.proComment ;    //商品评论信息列表
 
 
@@ -343,31 +343,46 @@ function setPro_detail_para_commment(data){
 
 	//详细信息处理
 	var str = "";
-	for(var j=0;j<3;j++){
+	for(var j=0;j<imgList.length;j++){
 		str+= '<div class="prop-area" style="min-height:300px;overflow: hidden;">' ;
-		str+= '<img src="' +para[j]+ '"alt="" />  ' ;
+		str+= '<img src="' +imgList[j]+ '"alt="" />  ' ;
 		str+= ' </div> ' ;
 	}
-	$("#goodsContent .tempWrap ul").html(str);
+	$("#goodsContent .txt-imgs li").html(str);
 
 	//商品参数处理
 	str = "";
-	for(var j=0;j<3;j++){
+	for(var j=0;j<para.length;j++){
 		str+= '<div id="ajax_loading" style="margin: 10px  auto 15px;text-align:center;">' ;
 		str+= '<img src="' +para[j]+ '"  style="width: auto; display: block;  margin: auto;">  ' ;
 		str+= ' </div> ' ;
 	}
-	//$("#goodsContent .txt-imgs li").html(str);
+	$("#goodsContent .property li").html(str);
 
 
 	//商品评论 ，需要重新配置CSS，这里先以图片处理
-	//str = "";
-	//for(var j=0;j<imgList.length;j++){
-	//	str+= '<div id="ajax_loading" style="margin: 10px  auto 15px;text-align:center;">' ;
-	//	str+= '<img src="' +imgList[j]+ '"  style="width: auto; display: block;  margin: auto;">  ' ;
-	//	str+= ' </div> ' ;
-	//}
-	$("#goodsContent .txt-imgs li").html(str);
+	str = "";
+	str+= '<div id="ajax_loading">' ;
+
+	for(var j=0;j<comment.length;j++){
+		str+= '<div class="one-comment">';
+		str+= '<div style="display: block; "><img src="images/self-tou.png" width="20px"><span>' + comment[j][0] + '</span>';//userID
+		for (var k = 0;k < comment[j][5];k++)
+		{
+			str+= '<img src="images/b-iocn02.png" width="20px">' ;//user_star
+		}
+		str+= '</div>' ;
+		//str+= '<div style="width: auto; display: block;  margin: auto;">' + comment[j][5] + '</div>' ;//user_star
+		str+= '<div  style="display: block;">' + comment[j][2] + '<span>类型：' + comment[j][7] + '</span></div>' ;//user_comment_time  proColor proSize
+		str+= '<div class="context" style="display: block;">' + comment[j][3] + '</div>' ;//user_comment
+		str+= '<div  style="display: block;">掌柜回复：' + comment[j][4] + '</div>' ;//seller_comment
+		//str+= '<div  style="display: block;">' + comment[j][5] + '</div>' ;//seller_comment_time
+		str+= '</div>';
+
+	}
+	str+= ' </div> ' ;
+
+	$("#goodsContent .appraise li").html(str);
 
 }
 
@@ -390,7 +405,7 @@ function ajaxgGtProductDetailFocus(productID){
 			$("#totalNum").text(data.totalNum);
 
 			//配置商品详情 参数 评论
-			//setPro_detail_para_commment(data);
+			setPro_detail_para_commment(data);
 		},
 		error: function (data, status, e) {
 			console.log("系统异常" + data + e);

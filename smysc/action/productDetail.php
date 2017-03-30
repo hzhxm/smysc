@@ -3,6 +3,63 @@
 //通用配置
 require_once "../dbclass.php";
 
+/*
+$errstr = "no error";
+//连接数据库
+$proParameter = array();
+$db = new dbclass("jim");
+$connect = $db->sql_init();
+$productID =1;
+$sql = "SELECT image FROM product_detailintroduce WHERE proID='" . $productID . "'  order by imageIdx";
+$result = $db->my_query($connect, $sql);
+echo $sql;
+if($result){
+    while ($row = $db->my_fetch_array($result,MYSQL_BOTH)) {
+        //$proParameter=array($row['image1'],$row['image2'],$row['image3']);
+        array_push($proParameter,$row["image"]);
+    }
+}else{
+    $errstr = "error to query : " . mysqli_error($connect);
+}
+//}
+$productID = 1;
+$proComment = array();
+//获取第三页商品评论详情
+$sql = "SELECT * FROM `product_comment` WHERE proID='" . $productID . "'";
+$result = $db->my_query($connect, $sql);
+    if($result){
+        while ($row = $db->my_fetch_array($result, MYSQLI_BOTH)) {
+            //array_push($proComment, $row['description']);
+            $comment = array($row["userID"],
+                $row["user_comment"],
+                $row["user_comment_time"],
+                $row["seller_comment"],
+                $row["seller_comment_time"],
+                $row["user_star"],
+                $row["user_comment_type"]);
+
+            array_push($proComment, $comment);
+        }
+    } else {
+        $errstr = "error to query : " . mysqli_error($connect);
+    }
+
+
+//echo $productlist ;
+//关闭数据库
+$db->close_connect($connect);
+
+//配置ajax返回数据
+$data = array(
+    "proParameter" =>$proParameter ,
+    "proComment" =>$proComment ,
+    "error" => $errstr,
+);
+echo json_encode($data);
+die;
+
+*/
+
 $action = $_POST['action'];
 
 if($action == "initProductDetail")
@@ -199,45 +256,60 @@ if($color){
     }
 }
 
-$productID = 520 ;
+$productID = 1 ;
 //获取第一页商品介绍详情图片
-if($color){
-        $result = $db->my_query($connect, "SELECT image1,image2,image3 FROM prodetaildescription WHERE proID='" . $productID . "'");
+//if($color){
+    $sql = "SELECT image FROM product_detailintroduce WHERE proID='" . $productID . "'  order by imageIdx";
+    $result = $db->my_query($connect, $sql);
     if($result){
             while ($row = $db->my_fetch_array($result, MYSQLI_BOTH)) {
             //$proDetailDes=array($row['image1'],$row['image2'],$row['image3']);
-            array_push($proDetailDes,$row);
+            array_push($proDetailDes,$row["image"]);
         }
     }else{
             $errstr = "error to query : " . mysqli_error($connect);
     }
-}
+//}
 
 //获取第二页商品参数详情
-if($color){
-        $result = $db->my_query($connect, "SELECT image1,image2,image3 FROM proparameter WHERE proID='" . $productID . "'");
+//if($color){
+       // $result = $db->my_query($connect, "SELECT image1,image2,image3 FROM proparameter WHERE proID='" . $productID . "'");
+    $sql = "SELECT image FROM product_detailparameter WHERE proID='" . $productID . "'  order by imageIdx";
+    $result = $db->my_query($connect, $sql);
+
     if($result){
         while ($row = $db->my_fetch_array($result,MYSQL_BOTH)) {
             //$proParameter=array($row['image1'],$row['image2'],$row['image3']);
-            array_push($proParameter,$row);
+            array_push($proParameter,$row["image"]);
         }
     }else{
             $errstr = "error to query : " . mysqli_error($connect);
     }
-}
+//}
 
 //获取第三页商品评论详情
-if($color){
-        $result = $db->my_query($connect, "SELECT description FROM procomment WHERE proID='" . $productID . "'");
+//if($color){
+    $sql = "SELECT * FROM `product_comment` WHERE proID='" . $productID . "'";
+    $result = $db->my_query($connect, $sql);
     if($result){
-            while ($row = $db->my_fetch_array($result, MYSQLI_BOTH)) {
+        while ($row = $db->my_fetch_array($result, MYSQLI_BOTH)) {
             //array_push($proComment, $row['description']);
-            array_push($proComment, $row);
+            $comment = array($row["userID"],
+                $row["user_comment"],
+                $row["user_comment_time"],
+                $row["seller_comment"],
+                $row["seller_comment_time"],
+                $row["user_star"],
+                $row["user_comment_type"],
+                $row["proColor"],
+                $row["proSize"]);
+
+            array_push($proComment, $comment);
         }
     } else {
             $errstr = "error to query : " . mysqli_error($connect);
         }
-    }
+//    }
 
 //获取商品库存情况
     $productColors = "";
@@ -330,6 +402,7 @@ $db->close_connect($connect);
         "error" => $errstr,
     );
     echo json_encode($data);
+
 }
 
 ?>

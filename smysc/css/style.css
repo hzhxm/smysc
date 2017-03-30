@@ -187,7 +187,7 @@ h1, h2, h3{font-family: "Microsoft Yahei",Arial, Helvetica, sans-serif;}
 .buy-area .btn-share{background-color: #f63234; border-color: #f63234;}
 .buy-area .btn-share .glyphicon{background:#fff; border-radius:50%; color:#f63234; padding:2px; font-size:10px; margin:1px 3px 0 0; float:left;}
 .item-name{margin:0; color: #333;overflow: hidden;font-size: 14px;font-weight: 400;line-height: 20px;max-height: 40px;}
-.goods-content{border-top:1px solid #e5e5e5; margin-top:20px;}
+.goods-content{border-top:1px solid #e5e5e5; }
 .goods-content .hd{height:40px; line-height:40px; padding:0 10px; border-bottom:1px solid #e5e5e5; position:relative;}
 .goods-content .hd ul li{float:left; width:33.33%; color:#666; font-size:16px; text-align:center; cursor: pointer;}
 .goods-content .hd ul .on{border-bottom:2px solid #f63234; color:#f63234; height:40px;}
@@ -198,7 +198,7 @@ h1, h2, h3{font-family: "Microsoft Yahei",Arial, Helvetica, sans-serif;}
 .prop-list > li{padding: 10px; border-bottom: 1px #ddd solid;display: -webkit-box; display: flex; height:40px;}
 .prop-list > li > label { display: block;color: #999; width: 90px; height: 100%;overflow: hidden; margin-right:8px; font-size:14px; font-weight: normal;}
 .prop-list > li > span {display: block; -webkit-box-flex: 1;flex: 1; text-overflow: ellipsis;white-space: nowrap;overflow: hidden; color: #666; }
-.appraise li{padding: 10px;border-bottom: 1px solid #ddd;}
+.appraise li{padding: 10px;/*border-bottom: 1px solid #ddd;*/}
 .appraise .user{display: inline-block; max-width: 8.2em; vertical-align: middle;  white-space: nowrap;overflow: hidden; text-overflow: ellipsis; color:#8a6d3b;}
 .appraise .date{float: right;color: #999;margin-left: -60px;}
 .appraise .app-cnt{line-height: 1.3; padding: 5px 0;word-break: break-all; color:#333;}
