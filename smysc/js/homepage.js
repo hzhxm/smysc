@@ -5,7 +5,7 @@ $(function () {
     productlist_handle();//推荐的商品列表处理
 
     $("#self").click(function (){
-        $.session.clear();
+        //$.session.clear();
         userId = $.session.get('userId');
         if(userId != "-1" && userId)
         {
@@ -18,7 +18,7 @@ $(function () {
     });
 
     $("#shopcart").click(function (){
-        $.session.clear();
+        //$.session.clear();
         userId = $.session.get('userId');
         if(userId != "-1" && userId)
         {
@@ -27,7 +27,18 @@ $(function () {
         else {
             location.href="login.html?fr=2";
         }
+    });
 
+    $("#keyword").click(function(){
+        $(".pop-schwrap").addClass("on");
+    });
+
+    $(".btn-back").click(function(){
+        $(".pop-schwrap").removeClass("on");
+    });
+
+    $(".clear-search-list").click(function(){
+        clearSearchList();
     });
 });
 
@@ -35,11 +46,18 @@ $(function () {
 var prolist_style = 2 ; // 用于设置每行显示多少个产品信息  1 2
 
 function ajaxForhomepageFocusAndnav(){
+    $userid = -1;
+
+    if(!$.session.get("userId"))
+    {
+        $userid=$.session.get("userId");
+    }
 
     $.ajax({
         type: 'post',
         async: true,
         url: 'action/homepage.php',
+        data:{action:"initIndexPage",userid:$userid},
         dataType: "json",
         success: function (data, status) {
             //ajax 成功
@@ -48,6 +66,8 @@ function ajaxForhomepageFocusAndnav(){
 
             //配置导航栏
             nav_config(data);
+
+            set_search_list(data);
 
         },
 
@@ -59,6 +79,62 @@ function ajaxForhomepageFocusAndnav(){
 
         }
     });
+}
+
+function clearSearchList(){
+    $userid = -1;
+
+    if(!$.session.get("userId"))
+    {
+        $userid=$.session.get("userId");
+    }
+    $.ajax({
+        type: 'post',
+        async: true,
+        url: 'action/homepage.php',
+        data:{action:"clearSearchList",userid:$userid},
+        dataType: "json",
+        success: function (data, status) {
+            //ajax 成功
+            if(data.flag){
+                $(".user-search-list").empty();
+            }
+
+        },
+
+        error: function (data, status, e) {
+            console.log("系统异常" + data + e);
+        },
+
+        beforeSend: function(xhr){
+
+        }
+    });
+}
+
+
+function set_search_list(data){
+    var str = "" ;
+
+    for(var i = 0;i<data.usersearchlist.length;i++){
+        str += '<span class="tag">' + data.usersearchlist[i] + '</span>';
+    }
+
+    $(".user-search-list").empty().html(str);
+
+    userId = $.session.get('userId');
+    if(userId != "-1" && userId)
+    {
+        $(".user_seach").hide();
+    }
+    str = "" ;
+
+    for(var i = 0;i<data.hotsearchlist.length;i++){
+        str += '<span class="tag">' + data.hotsearchlist[i] + '</span>';
+    }
+
+    $(".hot-search-list").empty().html(str);
+
 }
 
 function default_setting(){

@@ -366,16 +366,17 @@ function setPro_detail_para_commment(data){
 
 	for(var j=0;j<comment.length;j++){
 		str+= '<div class="one-comment">';
-		str+= '<div style="display: block; "><img src="images/self-tou.png" width="20px"><span>' + comment[j][0] + '</span>';//userID
+		str+= '<div style="display: block; "><img src="images/self-tou.png" width="20px"><span>' + comment[j][0] + '</span>';//userAccountName
 		for (var k = 0;k < comment[j][5];k++)
 		{
 			str+= '<img src="images/b-iocn02.png" width="20px">' ;//user_star
 		}
 		str+= '</div>' ;
 		//str+= '<div style="width: auto; display: block;  margin: auto;">' + comment[j][5] + '</div>' ;//user_star
-		str+= '<div  style="display: block;">' + comment[j][2] + '<span>类型：' + comment[j][7] + '</span></div>' ;//user_comment_time  proColor proSize
-		str+= '<div class="context" style="display: block;">' + comment[j][3] + '</div>' ;//user_comment
-		str+= '<div  style="display: block;">掌柜回复：' + comment[j][4] + '</div>' ;//seller_comment
+		str+= '<div>' + comment[j][2] + '<span>类型：' + comment[j][7] + '</span></div>' ;//user_comment_time  proColor proSize
+		str+= '<div class="context" style="display: block;">' + comment[j][1] + '</div>' ;//user_comment
+		str+= '<div class="reply-arrow"></div>' ;
+		str+= '<div class="reply">掌柜回复：' + comment[j][3] + '</div>' ;//seller_comment
 		//str+= '<div  style="display: block;">' + comment[j][5] + '</div>' ;//seller_comment_time
 		str+= '</div>';
 

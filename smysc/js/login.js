@@ -24,7 +24,7 @@ $(document).ready(function(){
                 //ajax 成功
                 if(data.userId != "-1")
                 {
-                    $.session.set('userId', data.userId)
+                    $.session.set('userId', data.userId);
                     var curUrl = window.location.search;
                     var frUrl = curUrl.substr(4);
                     if(frUrl == 1){//from self link button

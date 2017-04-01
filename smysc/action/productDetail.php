@@ -289,12 +289,13 @@ $productID = 1 ;
 
 //获取第三页商品评论详情
 //if($color){
-    $sql = "SELECT * FROM `product_comment` WHERE proID='" . $productID . "'";
+    $sql = "SELECT `product_comment`.* ,`user_information`.`userAccountName` FROM `product_comment`,`user_information` WHERE proID='" . $productID . "'
+        and `user_information`.`userID`=`product_comment`.`userID`";
     $result = $db->my_query($connect, $sql);
     if($result){
         while ($row = $db->my_fetch_array($result, MYSQLI_BOTH)) {
             //array_push($proComment, $row['description']);
-            $comment = array($row["userID"],
+            $comment = array($row["userAccountName"],
                 $row["user_comment"],
                 $row["user_comment_time"],
                 $row["seller_comment"],

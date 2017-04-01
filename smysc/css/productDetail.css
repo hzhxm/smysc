@@ -266,4 +266,20 @@
     color: #000000;
 }
 
+.one-comment .reply{
+    background-color: #eeeeee;
+}
+
+.one-comment .reply-arrow{
+    border-color: transparent transparent #eeeeee transparent;
+    border-width: 10px 10px 10px 10px;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    margin-left: 30px;
+}
+
+
+
+
 
