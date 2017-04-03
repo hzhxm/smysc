@@ -48,7 +48,7 @@ var prolist_style = 2 ; // 用于设置每行显示多少个产品信息  1 2
 function ajaxForhomepageFocusAndnav(){
     $userid = -1;
 
-    if(!$.session.get("userId"))
+    if($.session.get("userId"))
     {
         $userid=$.session.get("userId");
     }
@@ -84,7 +84,7 @@ function ajaxForhomepageFocusAndnav(){
 function clearSearchList(){
     $userid = -1;
 
-    if(!$.session.get("userId"))
+    if($.session.get("userId"))
     {
         $userid=$.session.get("userId");
     }
@@ -123,10 +123,12 @@ function set_search_list(data){
     $(".user-search-list").empty().html(str);
 
     userId = $.session.get('userId');
-    if(userId != "-1" && userId)
+    if( !userId)
     {
         $(".user_seach").hide();
     }
+
+
     str = "" ;
 
     for(var i = 0;i<data.hotsearchlist.length;i++){
