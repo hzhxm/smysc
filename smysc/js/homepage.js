@@ -43,8 +43,6 @@ $(function () {
 });
 
 
-var prolist_style = 2 ; // 用于设置每行显示多少个产品信息  1 2
-
 function ajaxForhomepageFocusAndnav(){
     $userid = -1;
 
@@ -211,6 +209,12 @@ function nav_config(data){
 
 }
 
+var prolist_style_row = 3 ; // 手机屏幕可以一次最多显示多少行 ，针对prolist_style_column == 2 的情况
+var prolist_style_column = 2 ; // 用于设置每行显示多少个产品信息  1 2
+var proImgHeigth = (screen.height-100)/prolist_style_row ;
+var db_page_size = 2*prolist_style_row*prolist_style_column ;//2表示数据库返回回来的产品，可以显示成2个screen
+
+
 
 
 //begin zjg add for product list form
@@ -223,9 +227,9 @@ function productlist_handle(){
 }
 
 function  appendProductList(result){
-    if(prolist_style == 1){
+    if(prolist_style_column == 1){
         $(".item-list").append(getSortListInfo1(result));
-    }else if((prolist_style == 2)){
+    }else if((prolist_style_column == 2)){
         $(".ssjg-ul1").append(getAppendSortListInfo(result));
     }else {
         $(".ssjg-ul1").append(getAppendSortListInfo(result));
@@ -233,9 +237,9 @@ function  appendProductList(result){
 }
 
 function  showProductList(result){
-    if(prolist_style == 1){
+    if(prolist_style_column == 1){
         $(".item-list").html(getSortListInfo1(result));
-    }else if((prolist_style == 2)){
+    }else if((prolist_style_column == 2)){
         $(".item-list").html(getSortListInfo(result));
     }else {
         $(".item-list").html(getSortListInfo(result));
@@ -245,7 +249,7 @@ function  showProductList(result){
 function sendData(){
 
     showFirstLoading();
-    $("#rowNub").val(prolist_style); //设置每行显示多少行
+    $("#pageSize").val(db_page_size); //设置每行显示多少行
     $("#list_form").ajaxForm().ajaxSubmit({
         success:function(result) {
             hideFirstAndAppendLoading();
@@ -265,7 +269,7 @@ function sendData(){
 
 function appendData(){
     showAppendLoading();
-    $("#rowNub").val(prolist_style); //设置每行显示多少行
+    $("#rowNub").val(prolist_style_column); //设置每行显示多少行
     $("#list_form").ajaxForm().ajaxSubmit({
         success:function(result) {
             hideFirstAndAppendLoading();
@@ -340,7 +344,8 @@ function getSortListInfo(data) {
         str += '<ul class="ssjg-ul1" style="padding-top:0;">';
 
         for (var i = 0; i < productlist.length; i++) {
-            str += '<li>';
+            //str += '<li>';
+            str += '<li style="float:left; width:50%;height: '+ proImgHeigth +'px; border:1px solid #E5E5E5; background:#fff; margin-bottom:5px;margin-top: 0;margin-left: 0;margin-right: auto;">';
             str += ' <div class="ssjg-tu">';
             str += '<a href="productDetails.html?proid='+ productlist[i]['proID']+'"><img src="img/' + productlist[i]['proPreviewImg'] + '"></a>';
             str += ' </div>';
@@ -407,9 +412,9 @@ function  registerReturnToTop(){
 }
 
 
-//$(document).height() 代表了整个文档的高度
+//$(document).height() 代表了当前页面的高度
 //$(this).scrollTop() 滚动条距离顶部距离
-//$(this).height()  当前元素高度
+//$(this).height()  当前高度
 function  registerScrollFunction() {
     $(window).scroll(function () {
         if ($(document).height() - $(this).scrollTop() - $(this).height() < 100) {

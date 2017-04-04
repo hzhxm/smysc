@@ -28,7 +28,7 @@ function clearSearchList($userId){
     if ($result) {
        $flag = true;
     } else {
-        echo "error to query : " . mysqli_error();
+        echo "error to query : " . mysqli_error($connect);
     }
 
 
@@ -67,7 +67,7 @@ function initIndexPage($userId)
                 array_push($imglist,$row);
             }
         }else{
-            echo "error to query : ".mysqli_error();
+            echo "error to query : ".mysqli_error($connect);
         }
     }
 
@@ -82,7 +82,7 @@ function initIndexPage($userId)
                 array_push($navigation,$row);
             }
         } else {
-            echo "error to query : " . mysqli_error();
+            echo "error to query : " . mysqli_error($connect);
         }
     }
 
@@ -95,7 +95,7 @@ function initIndexPage($userId)
                   array_push($productlist,$row);
             }
         } else {
-            echo "error to query : " . mysqli_error();
+            echo "error to query : " . mysqli_error($connect);
         }
     }
 
@@ -109,7 +109,7 @@ function initIndexPage($userId)
                 array_push($usersearchlist, $row["searchContent"]);
             }
         } else {
-            echo "error to query : " . mysqli_error();
+            echo "error to query : " . mysqli_error($connect);
         }
     }
 
@@ -120,7 +120,7 @@ function initIndexPage($userId)
             array_push($hotsearchlist,$row["searchContent"]);
         }
     } else {
-        echo "error to query : " . mysqli_error();
+        echo "error to query : " . mysqli_error($connect);
     }
 
 
